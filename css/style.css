@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css?family=M+PLUS+1p');
+* {
+    margin: 0;
+    overflow-wrap: break-word;
+    font-family: 'M PLUS 1p', sans-serif;
+}
+div {
+    display: block;
+}
+
+#backgrounds {
+    height: 100%;
+    display: block;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    opacity: 0.9;
+    transition: transform 0.3s ease-out;
+}
+
+#backgrounds > img {
+    width: 100%;
+    height: 100%;
+    /* opacity: 0.5; */
+    position: fixed;
+    z-index: 2;
+    background-size: 100% 100%;
+}
+
+.container {
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: #EBEBEB;
+    
+}
+
+.top {
+    margin: 20px;
+    padding: 0;
+    flex: 0 0 120px;
+    
+}
+
+.top span {
+    float: right;
+    font-size: 14px;
+    font-weight: 600;
+    text-shadow: 4px 4px 8px black;
+}
+
+.center {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.center-wrapper {
+    max-width: 100%;
+    padding: 0 40px;
+    position: relative;
+    top: -8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    text-shadow: 4px 4px 8px black;
+}
+
+.clocks {
+    font-size: 100px;
+}
+#login-form {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#login-form span {
+    font-size: 28px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.login-input {
+    margin: 0 0 0 10px;
+    height: 40px;
+    width: 300px;
+    background-color: transparent;
+    border-bottom:2px solid #EBEBEB;
+    border-right:none;
+    border-left:none;
+    border-top:none;
+    border-radius:0px;
+    font-size: 40px;
+    color: #EBEBEB;
+    outline: none;
+}
+
+#login-form button {
+    border: none;
+    padding-top: 10px;
+    background-color: transparent;
+    text-align: center;
+}
+
+#login-form button:active {
+	-webkit-transform: translate(0,2px);
+	-moz-transform: translate(0,2px);
+	transform: translate(0,2px);
+}
+
+svg:hover {
+    fill: darkgray;
+    cursor: pointer;
+}
+
+#greeting {
+    padding-top: 20px;
+    font-size: 40px;
+}
+.hidden {
+    display: none!important;
+}
+
+#todo-form {
+    width: 60%;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+}
+
+#todo-form span {
+    font-size: 28px;
+    font-weight: 900;
+    color: black;
+    margin-bottom: 24px;
+    text-shadow: 4px 4px 8px white;
+}
+
+#todo-form input {
+    width: 200px;
+    font-size: 18px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid black;
+    text-shadow: 4px 4px 8px white;
+    outline: none;
+    text-align: center;
+    color: black;
+}
+#todo-list {
+    font-weight: 700;
+    list-style:none;
+    padding-left:0px;
+}
+
+#todo-list li {
+    color: black;
+    font-size: 20px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+#todo-list span {
+    padding-bottom: 3px;
+    text-shadow: 4px 4px 8px white;
+}
+
+#todo-list button {
+    background-color: black;
+    font-size: 12px;
+    border-radius: 8px;
+    border: none;
+    margin-left: 6px;
+}
+
+.bottom {
+    height: 80px;
+    width: 100%;
+    margin-left: 60px;
+}
+
+.quotes {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.quotes span:last-child {
+    padding-left: 4px;
+}
+
+
+
